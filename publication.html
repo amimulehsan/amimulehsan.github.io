@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Amimul Ehsan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            animation: slideDown 1s ease-out;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .tabs {
+            overflow: hidden;
+            background: #fff;
+            font-family: Arial;
+            margin: 20px auto;
+            padding: 0;
+            width: 100%;
+            max-width: 800px;
+            border-bottom: 1px solid #ccc;
+            position: sticky;
+            top: 70px;
+            z-index: 999;
+            background-color: white;
+        }
+        .tabs ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        .tabs ul li {
+            margin: 0;
+            padding: 0;
+        }
+        .tabs ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #d32f2f;
+            border: 1px solid #d32f2f;
+            border-bottom: none;
+            border-radius: 4px 4px 0 0;
+            background: #fff;
+        }
+        .tabs ul li a:hover, .tabs ul li a.active {
+            background: #d32f2f;
+            color: #fff;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #d32f2f;
+            border-radius: 0 4px 4px 4px;
+            max-width: 800px;
+            margin: 20px auto;
+            animation: fadeIn 1.5s ease-in;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        li:hover {
+            transform: scale(1.02);
+            background-color: #ffcdd2;
+        }
+        a {
+            color: #d32f2f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .back-button {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: white;
+            color: #d32f2f;
+            border: 1px solid #d32f2f;
+            padding: 5px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .back-button:hover {
+            background-color: #d32f2f;
+            color: white;
+        }
+        .back-button::before {
+            content: "←";
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html#publication" class="back-button">Back to Previous Page</a>
+    <h1>Publications | M.E. Ehsan</h1>
+</header>
+
+<div class="tabs">
+    <ul>
+        <li><a href="#" class="tab-link active" data-tab="all">All</a></li>
+        <li><a href="#" class="tab-link" data-tab="theses">Theses</a></li>
+        <li><a href="#" class="tab-link" data-tab="journal">Journal Articles</a></li>
+        <li><a href="#" class="tab-link" data-tab="conference">Conference Proceedings</a></li>
+	<li><a href="#" class="tab-link" data-tab="report">Reports</a></li>
+    </ul>
+</div>
+
+<div class="tab-content active" id="all">
+    <div class="container">
+        <ul class="publications-list">
+ 
+            
+
+
+            <li data-category="theses">
+                <strong>Phd Dissertation: "Stability and Control of Weak Grid DER Integration" (Initially Proposed)</strong><br>
+                <em>UNC Charlotte, 2027</em><br>
+                <a href="" target="">In progress</a>
+            </li>
+            <li data-category="conference">
+                <strong>Privacy Protection in Collaborative Geographically Distributed Co-Simulation of Multimodal Energy Systems</strong><br>
+                <em>ACM e-Energy, Jun 2024, Singapore</em><br>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3632775.3661990" target="_blank">DOI: 10.1145/3632775.3661990</a>
+            </li>
+            <li data-category="report">
+                <strong>Application of Reinforcement Learning in Voltage Regulation for IBR Grid Integration                </strong><br>
+                <em>Project Report (Course: Reinforcement Learning & Optimal Control), May 2024</em><br>
+                <a href="" target="">Available upon request</a>
+            </li>
+            <li data-category="report">
+                <strong>Configuring SEL 751 Relay in a Hardware-In-The-Loop setup with RTDS</strong><br>
+                <em>Project Report (Course: Power System Protection, UNC Charlotte), May 2024</em><br>
+                <a href="" target="">Available upon request</a>
+            </li>
+            <li data-category="report">
+                <strong>Reactive Power Compensation Scenario Analysis of a Modified IEEE 34 Bus Test System in ETAP & CYME</strong><br>
+                <em>Project Report (Course: Power Distribution System I), Dec 2023</em><br>
+                <a href="" target="">Available upon request</a>
+            </li>
+            <li data-category="conference">
+                <strong>Stability Analysis for a Co-Simulation Testbed Including Real-Time & Quasi Steady-State Simulators</strong><br>
+                <em>IEEE NAPS, Oct 2023, Ashville, NC</em><br>
+                <a href="https://ieeexplore.ieee.org/abstract/document/10318593" target="_blank">DOI: 10.1109/NAPS58826.2023.10318593</a>
+            </li>
+            <li data-category="report">
+                <strong>Configuring and Programming Beckhoff PLC</strong><br>
+                <em>Report (Deliverable: KIT Internship), Aug 2023</em><br>
+                <a href="" target="">Available upon request</a>
+            </li>
+            <li data-category="report">
+                <strong>Computer Networking Fundamentals</strong><br>
+                <em>Report (Deliverable: KIT Internship), Aug 2023</em><br>
+                <a href="" target="">Available upon request</a>
+            </li>
+            
+            <li data-category="report">
+                <strong>Distribution Network Reconfiguration and Reactive Power Compensation Using a Hybrid Simulated Annealing - Minimum Spanning Tree Algorithm</strong><br>
+                <em>Project Report (Course: Power Distribution System II), May 2023</em><br>
+                <a href="" target="">Available upon request</a>
+            </li>
+            <li data-category="report">
+                <strong>Literature Survey on Optimization Methods Used in Grid Connected Inverter Control</strong><br>
+                <em>Project Report (Course: Convex Optimization & Machine Learning), Dec 2022</em><br>
+                <a href="" target="">Available upon request</a>
+            </li>
+            <li data-category="report">
+                <strong>Design a Controller for a Boat Crossing a River</strong><br>
+                <em>Project Report (Course: Control System Theory I), Dec 2022</em><br>
+                <a href="" target="">Available upon request</a>
+            </li>
+            <li data-category="report">
+                <strong>NIST Smart Grid Testbed Toolbox 1.0</strong><br>
+                <em>User Guide, Aug 2022</em><br>
+                <a href="" target="">Available upon request</a>
+            </li>
+            <li data-category="report">
+                <strong>Validation Capabilities of the NIST Campus Power System to Evaluate Distributed Control of Grid-Edge Distributed Energy Resources</strong><br>
+                <em>NIST Technical Note, U.S. Department of Commerce, Aug 2021</em><br>
+                <a href="https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2173.pdf" target="_blank">DOI: 10.6028/NIST.TN.2173</a>
+            </li>
+            <li data-category="report">
+                <strong>Cybersecurity Challenges in Distributed Control</strong><br>
+                <em>Report, Jun 2021</em><br>
+                <a href="https://arxiv.org/abs/2106.13712" target="_blank">arXiv:2106.13712</a>
+            </li>
+            <li data-category="conference">
+                <strong>Characterization of Residential Circuit Impedance</strong><br>
+                <em>IEEE ISGT, Feb 2021, Washington, DC</em><br>
+                <a href="https://ieeexplore.ieee.org/document/9372248" target="_blank">DOI: 10.1109/ISGT49243.2021.9372248</a>
+            </li>
+            <li data-category="conference">
+                <strong>Dependent Wind Speed Models: Copula Approach</strong><br>
+                <em>IEEE EPEC, Nov 2020, Edmonton, Canada</em><br>
+                <a href="https://ieeexplore.ieee.org/document/9320024" target="_blank">DOI: 10.1109/EPEC48502.2020.9320024</a>
+            </li>
+            <li data-category="conference">
+                <strong>Development of a Drought Prediction System Based on Long Short-Term Memory Networks</strong><br>
+                <em>Springer Advances in Neural Networks: ISNN, Nov 2020, Cairo, Egypt</em><br>
+                <a href="https://link.springer.com/chapter/10.1007/978-3-030-64221-1_13" target="_blank">DOI: 10.1007/978-3-030-64221-1_13</a>
+            </li>
+            <li data-category="journal">
+                <strong>Investigation of Data Size Variability in Wind Speed Prediction Using AI Algorithms</strong><br>
+                <em>Cybernetics and Systems, Vol. 52 (1), Oct 2020</em><br>
+                <a href="https://www.tandfonline.com/doi/abs/10.1080/01969722.2020.1827796" target="_blank">DOI: 10.1080/01969722.2020.1827796</a>
+            </li>
+            <li data-category="conference">
+                <strong>Wind Speed Prediction and Visualization Using Long Short-Term Memory Networks (LSTM)</strong><br>
+                <em>IEEE ICIST, Sep 2020, Bath/London/Playmouth, UK</em><br>
+                <a href="https://ieeexplore.ieee.org/document/9202300" target="_blank">DOI: 10.1109/ICIST49303.2020.9202300</a>
+            </li>
+            <li data-category="theses">
+                <strong>Masters Thesis: "Predictive Models for Wind Speed Using AI and Copula"</strong><br>
+                <em>University of the District of Columbia, Dec 2019</em><br>
+                <a href="https://arxiv.org/abs/2107.06182" target="_blank">	arXiv:2107.06182</a>
+            </li>
+            <li data-category="journal">
+                <strong>A Practical Biogas Based Energy Neutral Home System for Rural Communities of Bangladesh</strong><br>
+                <em>Renewable and Sustainable Energy, Vol. 8 (2), Feb 2016</em><br>
+                <a href="http://scitation.aip.org/content/aip/journal/jrse/8/2/10.1063/1.4942783" target="_blank">DOI: 10.1063/1.4942783</a>
+            </li>
+            <li data-category="conference">
+                <strong>Biogas Based Chain Business: A Road to Sustainable Rural Development</strong><br>
+                <em>IEEE ICDRET, Jan 2016, Dhaka, Bangladesh</em><br>
+                <a href="http://ieeexplore.ieee.org/document/7421505/" target="_blank">DOI: 10.1109/ICDRET.2016.7421505</a>
+            </li>
+            <li data-category="theses">
+                <strong>Modeling, Analyzing, and Simulation of Microgrid for CUET Campus"</strong><br>
+                <em>Bachelor Thesis: "Chittagong University of Engineering & Technology, Sep 2015</em><br>
+                <a href="https://www.researchgate.net/publication/311202119_Modeling_Analyzing_and_Simulation_of_Micro_Grid_System_for_CUET_Campus" target="_blank">Full Text</a>
+            </li>
+            <li data-category="conference">
+                <strong>Present Scenario and Future Prospect of Renewable Energy in Bangladesh</strong><br>
+                <em>ICPSDT, Aug 2015, Chittagong, Bangladesh</em><br>
+                <a href="https://www.researchgate.net/publication/294721198_Present_Scenario_and_Future_Prospect_of_Renewable_Energy_in_Bangladesh#:~:text=Present%20Scenario%20and%20Future%20Prospect%20of%20Renewable%20Energy%20in%20Bangladesh,-Conference%20Paper%20(PDF&text=The%20demand%20of%20energy%20is,fuel%20energy%20resources%20in%20Bangladesh." target="_blank">Full Text</a>
+            </li>
+            <li data-category="conference">
+                <strong>Feasibility and Safety Study of Nuclear Power in Bangladesh: Perspective to Rooppur Nuclear Power Plant</strong><br>
+                <em>ECERE, Nov 2014, Chittagong, Bangladesh</em><br>
+                <a href="https://www.cuet.ac.bd/ecere/Papers/ECERE2014-P067.pdf" target="_blank">Full Text</a>
+            </li>
+            
+
+            <!-- Add more publications as needed -->
+        </ul>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const publications = document.querySelectorAll('.publications-list li');
+        
+        tabLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                
+                tabLinks.forEach(item => item.classList.remove('active'));
+                link.classList.add('active');
+                
+                const tabTarget = link.getAttribute('data-tab');
+                
+                publications.forEach(pub => {
+                    const categories = pub.getAttribute('data-category').split(' ');
+                    if (categories.includes(tabTarget) || tabTarget === 'all') {
+                        pub.style.display = 'block';
+                    } else {
+                        pub.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        const backButton = document.querySelector('.back-button');
+        backButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            // Replace with actual landing page URL
+            window.location.href = 'index.html';
+        });
+    });
+</script>
+
+</body>
+</html>
